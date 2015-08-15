@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+  	<!-- Scripts -->
+	<script src="public/lib/jquery/dist/jquery.min.js"></script>
+	<script src="public/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="public/lib/angular/angular.min.js"></script>
+	<script src="public/lib/moment/min/moment-with-locales.min.js"></script>
+
+	<!-- Cascading Style Sheets -->
+	<link rel="stylesheet" href="public/lib/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="public/lib/angular/angular-csp.css">
+
+	<script src="popup.js"></script>
+
+    <title>RP Calc</title>
+    
+  </head>
+  <body>
+
+	<div class="container" style="width: 325px" ng-app="myApp" ng-controller="myCtrl" ng-csp>
+	    <h2>RP Calc</h2>
+	    <form role="form">
+	    	<table class="table">
+				<tr>
+					<td>Hours</td>
+					<td><input type="text" class="form-control" id="hours" ng-model="hours" /></td>
+				</tr>
+				<tr>
+					<td>Mins</td>
+					<td><input type="text" class="form-control" id="mins" ng-model="mins" /></td>
+				</tr>
+				<tr>
+					<td><button id="calculateBtn" class="btn btn-default" ng-click="calctime()">Calculate</button></td>
+					<td><input type="text" class="form-control" id="results" ng-model="rp_time" /></td>
+				</tr>
+	    	</table>
+	    </form>
+    </div>
+  </body>
+</html>
+
+

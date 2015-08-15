@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "RP Calc",
+  "description": "This extension let you enter hours and mins and calculate the Rp go live time",
+  "version": "1.2",
+  "icons": { "16": "rbp.png",
+			 "48": "rbp.png",
+			 "128": "rbp.png" },
+  "browser_action": {
+   "default_icon": "rbp.png",
+   "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+    	"matches": ["http://*/*"],
+		"js": ["popup.js", "public/lib/jquery/dist/jquery.min.js", "public/lib/bootstrap/dist/js/bootstrap.min.js", 
+			   "public/lib/angular/angular.min.js", "public/lib/moment/min/moment-with-locales.min.js"],
+		"css": ["public/lib/bootstrap/dist/css/bootstrap.min.css", "public/lib/angular/angular-csp.css"]
+    }
+  ]
+}
