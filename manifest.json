@@ -3,7 +3,7 @@
 
   "name": "RP Calc",
   "description": "This extension let you enter hours and mins and calculate the Rp go live time",
-  "version": "1.4",
+  "version": "1.5",
   "icons": { "16": "rbp.png",
 			 "48": "rbp.png",
 			 "128": "rbp.png" },
